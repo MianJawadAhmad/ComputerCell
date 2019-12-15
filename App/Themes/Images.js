@@ -1,6 +1,17 @@
 // leave off @2x/@3x
 const images = {
   logo: require('../Images/ir.png'),
+  event1: require('../Images/event1.png'),
+  event2: require('../Images/event2.png'),
+  event3: require('../Images/event3.png'),
+  event4: require('../Images/event4.png'),
+  event5: require('../Images/event5.png'),
+  event6: require('../Images/event6.png'),
+  team1: require('../Images/team1.png'),
+  team2: require('../Images/team2.png'),
+  team3: require('../Images/team3.png'),
+  team4: require('../Images/team4.png'),
+  team5: require('../Images/team5.png'),
   clearLogo: require('../Images/top_logo.png'),
   launch: require('../Images/launch-icon.png'),
   ready: require('../Images/your-app.png'),
