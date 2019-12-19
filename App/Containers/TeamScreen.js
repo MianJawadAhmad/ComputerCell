@@ -33,7 +33,7 @@ const team =[
     id: 3,
     image: Images.team3,
     name: 'Asif Taj',
-    title: 'President',
+    title: 'Vice President',
     color:'orange'
     // facebook: Linking.openURL('https://www.facebook.com/mainjawadahmad1')
   },
@@ -41,7 +41,7 @@ const team =[
     id: 4,
     image: Images.team4,
     name: 'Ayesha Noor',
-    title: 'President',
+    title: 'Vice President',
     color:'green'
     // facebook: Linking.openURL('https://www.facebook.com/mainjawadahmad1')
   },
@@ -71,10 +71,12 @@ class TeamScreen extends Component {
       <Container style={{flex:1,backgroundColor:'#FEF6E6'}}>
               <Header>
           <Left>
-            <Icon onPress={()=> this.props.navigation.navigate('HomeScreen')} name='md-arrow-round-back'>
+            <Icon style={{fontSize:hp('3')}} onPress={()=> this.props.navigation.navigate('HomeScreen')} name='md-arrow-round-back'>
 
             </Icon>
           </Left>
+          <Body/>
+          <Right/>
         </Header>
       <Content style={{flex:1}}>
         <FlatList
@@ -84,12 +86,13 @@ class TeamScreen extends Component {
                 
         <Card style={{flex:1,flexDirection:'row', height: hp('17%')}}>
           <CardItem cardBody >
-            <Image source={item.image} style={{width: wp('30%'),height: hp('15%'), marginLeft:5}}/>
+            <Image source={item.image} style={{width: wp('30%'),height: hp('15%'), marginLeft:5}}
+            resizeMode={'contain'}/>
           </CardItem>
           <CardItem cardBody style={{flex:1,flexDirection:'column', alignItems:'flex-start', marginLeft:15, marginTop:6}}>
-            <Text style={{fontWeight:'bold'}}>{item.name}</Text>
+            <Text style={{fontWeight:'bold',fontSize:hp('2%')}}>{item.name}</Text>
             <Text style={{fontWeight:'bold',fontSize:hp('2%'), color:item.color}}>______________</Text>
-            <Text style={{}}>{item.title}</Text>
+            <Text style={{fontSize:hp('1.5%')}}>{item.title}</Text>
             
             <CardItem style={{flex:1,flexDirection:'row', alignItems:'flex-start', marginLeft:5, marginTop:5,width: wp('60%')}}>
               <Left style={{justifyContent:'center'}}>

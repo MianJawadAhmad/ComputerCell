@@ -69,24 +69,30 @@ class EventsScreen extends Component {
   render () {
     return (
       <Container style={{backgroundColor:'#FEF6E6', flex:1}}>
-        <Header>
+        <Header  style={{backgroundColor:'#FEF6E6'}}>
           <Left>
-            <Icon onPress={()=> this.props.navigation.navigate('HomeScreen')} name='md-arrow-round-back'>
+            <Icon style={{fontSize:hp('3')}} onPress={()=> this.props.navigation.navigate('HomeScreen')} name='md-arrow-round-back'>
 
             </Icon>
           </Left>
+          <Body/>
+          <Right/>
         </Header>
         <Content>
           <CardItem style={{flex:1, flexDirection:'row', backgroundColor:'#FEF6E6'}}>
             
-              <Button  transparent style={{flex:1, margin:2, borderRadius:5, borderWidth:2, justifyContent:'center', backgroundColor:this.state.upeventColor, opacity:0.5, borderColor:'black'}}
+              <Button  transparent style={{flex:1, margin:2, borderRadius:5, borderWidth:2, 
+              justifyContent:'center', backgroundColor:this.state.upeventColor, 
+              opacity:0.5, borderColor:'black',height: hp('5%'),width: wp('10%') }}
               onPress={this.upEvents}>
-                <Text style={{color: this.state.upColortext}}>Up Comming Events</Text>
+                <Text style={{color: this.state.upColortext,fontSize:hp('2%')}}>Up Comming Events</Text>
               </Button>
            
-              <Button  transparent style={{flex:1, margin:2, borderRadius:5, borderWidth:2, justifyContent:'center', backgroundColor:this.state.paeventColor, opacity:0.5, borderColor:'black'}}
+              <Button  transparent style={{flex:1, margin:2, borderRadius:5, borderWidth:2, 
+              justifyContent:'center', backgroundColor:this.state.paeventColor, 
+              opacity:0.5, borderColor:'black',height: hp('5%'),width: wp('10%') }}
               onPress={this.paEvents}>
-                <Text style={{color: this.state.paColortext}}>Past Events</Text>
+                <Text style={{color: this.state.paColortext,fontSize:hp('2%')}}>Past Events</Text>
               </Button>
             
           </CardItem>
@@ -100,10 +106,10 @@ class EventsScreen extends Component {
                        resizeMode={'contain'}/>
                     </CardItem>
                     <CardItem>
-                  <Text style={{fontWeight:'bold'}}>{item.title}</Text>
+                  <Text style={{fontWeight:'bold',fontSize:hp('3%')}}>{item.title}</Text>
                     </CardItem>
                     <CardItem>
-                  <Text>{item.dec}</Text>
+                  <Text style={{fontSize:hp('2%')}}>{item.dec}</Text>
                     </CardItem>
                   </Card>
                     )}

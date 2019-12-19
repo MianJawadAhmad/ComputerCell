@@ -33,8 +33,8 @@ const Data = [
     },
     {
       id: 5,
-      title: 'About Us',
-      icon: 'md-hand',
+      title: 'Partners',
+      icon: 'md-flashlight',
     },
     {
     id: 6,
@@ -104,15 +104,15 @@ class HomeScreen extends Component {
     if (item.id === 1){
       this.props.navigation.navigate('EventsScreen')
     }else if (item.id === 2){
-      this.props.navigation.navigate('EventsScreen')
+      this.props.navigation.navigate('GalleryScreen')
     }else if (item.id === 3){
       this.props.navigation.navigate('TeamScreen')
     }else if (item.id === 4){
-      this.props.navigation.navigate('EventsScreen')
+      this.props.navigation.navigate('QuizScreen')
     }else if (item.id === 5){
-      this.props.navigation.navigate('EventsScreen')
+      this.props.navigation.navigate('PartnersScreen')
     }else if (item.id === 6){
-      this.props.navigation.navigate('EventsScreen')
+      this.props.navigation.navigate('LocationScreen')
     }
   }
 }

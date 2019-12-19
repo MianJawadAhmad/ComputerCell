@@ -18,7 +18,7 @@ class SplashScreen extends Component {
         actions: [NavigationActions.navigate({ routeName: 'HomeScreen' })],
       });
       this.props.navigation.dispatch(resetAction);
-    },3000)
+    },2000)
   }
   render () {
     return (

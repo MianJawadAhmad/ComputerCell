@@ -1,4 +1,8 @@
 import { createStackNavigator, createAppContainer } from 'react-navigation'
+import PartnersScreen from '../Containers/PartnersScreen'
+import GalleryScreen from '../Containers/GalleryScreen'
+import QuizScreen from '../Containers/QuizScreen'
+import LocationScreen from '../Containers/LocationScreen'
 import TeamScreen from '../Containers/TeamScreen'
 import EventsScreen from '../Containers/EventsScreen'
 import HomeScreen from '../Containers/HomeScreen'
@@ -10,6 +14,10 @@ import styles from './Styles/NavigationStyles'
 
 // Manifest of possible screens
 const PrimaryNav = createStackNavigator({
+  PartnersScreen: { screen: PartnersScreen },
+  GalleryScreen: { screen: GalleryScreen },
+  QuizScreen: { screen: QuizScreen },
+  LocationScreen: { screen: LocationScreen },
   TeamScreen: { screen: TeamScreen },
   EventsScreen: { screen: EventsScreen },
   HomeScreen: { screen: HomeScreen },
@@ -19,7 +27,7 @@ const PrimaryNav = createStackNavigator({
 }, {
   // Default config for all screens
   headerMode: 'none',
-  initialRouteName: 'TeamScreen',
+  initialRouteName: 'SplashScreen',
   navigationOptions: {
     headerStyle: styles.header
   }
