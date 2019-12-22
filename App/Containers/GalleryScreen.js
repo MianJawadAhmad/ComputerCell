@@ -42,6 +42,18 @@ class GalleryScreen extends Component {
     }
   }
 
+  renderView = () =>{
+    return(
+      <Container>
+        <Content>
+        <Image source={item.image} style={{height: hp('15%'),width: wp('30%')
+           ,justifyContent:'center',alignItems:'center', borderRadius:hp('1%')}}
+              ></Image>
+        </Content>
+      </Container>
+    )
+  }
+
   render () {
     return (
       <Container style={{flex:1,backgroundColor:'#FEF6E6'}}>
@@ -61,7 +73,8 @@ class GalleryScreen extends Component {
                 renderItem={({ item }) => (
 
         <TouchableOpacity  style={{ height: hp('15%'),width: wp('30%'),margin:2,
-              backgroundColor:'white', alignSelf:'center', justifyContent:'center', alignContent:'center', borderRadius:hp('1%')}}>
+              backgroundColor:'white', alignSelf:'center', justifyContent:'center', alignContent:'center', borderRadius:hp('1%')}}
+             >
 
         <Image source={item.image} style={{height: hp('15%'),width: wp('30%')
            ,justifyContent:'center',alignItems:'center', borderRadius:hp('1%')}}
@@ -79,6 +92,7 @@ class GalleryScreen extends Component {
     </Container>
     )
   }
+
 }
 
 const mapStateToProps = (state) => {

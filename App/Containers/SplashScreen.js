@@ -22,14 +22,10 @@ class SplashScreen extends Component {
   }
   render () {
     return (
-      <LinearGradient colors={['#4c669f', '#3b5998', '#192f6a']} style={styles.linearGradient}>
+      <LinearGradient colors={['#FEF6E6', '#FEFAE6', '#D8C6A3']} style={styles.linearGradient}>
       <View style={{flex:1}}>
       <View style={{flex:1, justifyContent: 'center', alignItems: 'center'}}>
           <Image source={Images.computercell} style={{width: Metrics.screenWidth-50}} resizeMode={'contain'}/>
-      </View>
-      <View style={{ marginBottom : 50, flexDirection : 'row', alignItems : 'center', justifyContent : 'center'}}>
-        <Image source={Images.computercell} style={{ width: Metrics.screenWidth/2-20, height : 50}} resizeMode={'contain'}/>
-        <Image source={Images.computercell} style={{ width: Metrics.screenWidth/2-20, height : 50}} resizeMode={'contain'}/>
       </View>
     </View>
     </LinearGradient>
