@@ -69,7 +69,7 @@ class TeamScreen extends Component {
   render () {
     return (
       <Container style={{flex:1,backgroundColor:'#FEF6E6'}}>
-              <Header>
+              <Header style={{backgroundColor:'#FEF6E6'}}>
           <Left>
             <Icon style={{fontSize:hp('3')}} onPress={()=> this.props.navigation.navigate('HomeScreen')} name='md-arrow-round-back'>
 
