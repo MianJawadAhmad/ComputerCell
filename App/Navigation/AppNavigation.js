@@ -1,4 +1,5 @@
 import { createStackNavigator, createAppContainer } from 'react-navigation'
+import LoginScreen from '../Containers/LoginScreen'
 import PartnersScreen from '../Containers/PartnersScreen'
 import GalleryScreen from '../Containers/GalleryScreen'
 import QuizScreen from '../Containers/QuizScreen'
@@ -14,6 +15,7 @@ import styles from './Styles/NavigationStyles'
 
 // Manifest of possible screens
 const PrimaryNav = createStackNavigator({
+  LoginScreen: { screen: LoginScreen },
   PartnersScreen: { screen: PartnersScreen },
   GalleryScreen: { screen: GalleryScreen },
   QuizScreen: { screen: QuizScreen },
@@ -27,7 +29,7 @@ const PrimaryNav = createStackNavigator({
 }, {
   // Default config for all screens
   headerMode: 'none',
-  initialRouteName: 'SplashScreen',
+  initialRouteName: 'LoginScreen',
   navigationOptions: {
     headerStyle: styles.header
   }

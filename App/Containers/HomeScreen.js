@@ -89,7 +89,7 @@ class HomeScreen extends Component {
                     <Button light style={{ flex: 1, flexDirection: 'column',height: hp('10%'),width: wp('90%') , margin:5, justifyContent:'center', backgroundColor:'white',borderRadius:6}}
                     onPress={()=> this.Select(item)}>  
                       <Icon name= {item.icon} style={{flex: 1, color:'black',fontSize:hp('3%')}}/>
-                      <Text style={{ fontSize:hp('2%'), color:'black'}}>{item.title}</Text>
+                      <Text style={{ fontSize:hp('2%'), color:'black',flex:1}}>{item.title}</Text>
                     </Button> 
                     )}
                     //Setting the number of column

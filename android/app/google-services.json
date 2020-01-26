@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "69807952747",
+    "firebase_url": "https://computercell-7da08.firebaseio.com",
+    "project_id": "computercell-7da08",
+    "storage_bucket": "computercell-7da08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69807952747:android:c46c07a9a4a981a138722e",
+        "android_client_info": {
+          "package_name": "com.computercell"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "69807952747-du5c6rvrp5jdig185lq46ghcdcu4bo7b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW-HNDD8abh56KoGcspvRUypMQIMIlD1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "69807952747-du5c6rvrp5jdig185lq46ghcdcu4bo7b.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "69807952747-1104kajcfko5lvvir9bgnoljggaq5pj7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.ComputerCell"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

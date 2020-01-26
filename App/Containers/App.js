@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 import { Provider } from 'react-redux'
 import RootContainer from './RootContainer'
 import createStore from '../Redux'
-
+import firebase from 'react-native-firebase';
 // create our store
 const store = createStore()
 
