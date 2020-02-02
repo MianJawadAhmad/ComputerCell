@@ -5,6 +5,8 @@ target 'ComputerCell' do
   # Required by RNFirebase
   pod 'Firebase/Core', '~> 6.13.0'
   pod 'Firebase/Auth', '~> 6.13.0'
+  pod 'Firebase/Database', '~> 6.13.0'
+  pod 'Firebase/DynamicLinks', '~> 6.13.0'
   # Comment the next line if you don't want to use dynamic frameworks
 
 
